@@ -9,8 +9,8 @@ export default function Home({ posts }) {
         posts.map((post) => (
           <Link href={`/${post.Slug}`} key={post.id}>
             <a>
-              <h2>{post.Title}</h2>
-              <div>{post.User.username}</div>
+              <h2>{post?.Title}</h2>
+              <div>{post?.User?.username}</div>
             </a>
           </Link>
         ))}

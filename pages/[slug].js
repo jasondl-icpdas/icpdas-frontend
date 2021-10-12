@@ -6,7 +6,7 @@ export default function Post({ post }) {
       <Link href="/">
         <a>Go Home</a>
       </Link>
-      <h2>{post.Title}</h2>
+      <h2>{post?.Title}</h2>
     </div>
   );
 }
