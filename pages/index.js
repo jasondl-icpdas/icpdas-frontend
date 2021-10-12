@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home({ posts }) {
   return (
     <div>
-      ICP DAS USA
+      <h1> ICP DAS USA </h1>
       {/* loop over the posts and show them */}
       {posts &&
         posts.map((post) => (
