@@ -1,8 +1,15 @@
 import Link from "next/link";
+import Image from 'next/image';
 
-export default function Home({ posts }) {
+function Home({ posts }) {
   return (
     <div>
+      <Image
+          src="/images/icp-das-usa-logo-128.png"
+          alt="ICP DAS USA"
+          height={128}
+          width={128}
+          />
       <h1> ICP DAS USA </h1>
       {/* loop over the posts and show them */}
       {posts &&
@@ -27,3 +34,4 @@ export async function getStaticProps() {
     props: { posts },
   };
 }
+export default Home;
