@@ -1,13 +1,12 @@
 import Link from "next/link";
 import Image from 'next/image';
 
-
-export default function Home({ posts }) {
+function Home({ posts }) {
   return (
     <div>
       <Image
           src="/images/icp-das-usa-logo-128.png"
-          alt="DevFlow Logo"
+          alt="ICP DAS USA"
           height={128}
           width={128}
           />
@@ -35,3 +34,4 @@ export async function getStaticProps() {
     props: { posts },
   };
 }
+export default Home;

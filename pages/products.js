@@ -3,7 +3,6 @@ const Products = ({products}) => {
     return (
         <div>
             {products.map((product) => {
-
                 return (
                     <div key={product.id}>
                         <div>{product.Name}</div>
@@ -11,8 +10,7 @@ const Products = ({products}) => {
                         <div>{product.Price}</div>
                         <div>{product.category.Name}</div>
                     </div>
-                )
-                
+            )   
             })}
         </div>
     )
@@ -21,7 +19,6 @@ const Products = ({products}) => {
 export async function getStaticProps() {
     const res = await fetch("https://icpdas-backend.herokuapp.com/products");
     const products = await res.json();
-  
     return {
         props: { products },
       };
