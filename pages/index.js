@@ -1,15 +1,11 @@
 import Link from "next/link";
-import Image from 'next/image';
+import { Navbar } from "../components/Navbar";
 
 function Home({ posts }) {
   return (
     <div>
-      <Image
-          src="/images/icp-das-usa-logo-128.png"
-          alt="ICP DAS USA"
-          height={128}
-          width={128}
-          />
+      <Navbar />
+      
       <h1> ICP DAS USA </h1>
       {/* loop over the posts and show them */}
       {posts &&
